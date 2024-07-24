@@ -15,7 +15,7 @@ git config
 | &#x2714; | git config --global user.email **email**                | Set user email |
 
 | &#x2714; | git remote add origin <url>                             | Add remote origin for local directory for accessbility to remote repo |
-| &#x2714; | git push -u origin **REMOTE-BranchName**                | To set upstream for a perticular branch |
+| &#x2714; | git push -u origin **REMOTE-BranchName**                | To set upstream for a particular branch |
 
 ## Repository
 | &#x2714; / &#x274C; | Command | Description |
