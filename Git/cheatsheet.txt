@@ -1,0 +1,7 @@
+PREVIOUS TWO ATTEMPTS FAILED.
+new line added for now, will push this one to remote repo then create my own cheatsheet
+Hope that will work.
+These lines above were aded after few time was passed.
+now trying to add these few lines of text using terminal.
+
+this is main branch, wow, it has nothing yet.

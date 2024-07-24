@@ -1,0 +1,41 @@
+I do require more understanding on below commands
+&#x2714; git remote add <origin> <url>
+&#x2714; git remote remove <name>
+
+commands for deleting files from working dir., staged or committed, or pushed.
+        rm <filename>
+        git reset <filename>
+
+commands for renaming the files on levels
+ git mv
+
+&#x2714; git commit -a
+git commit --amend
+
+
+
+git reset --soft **commit** | Moves the Head to the specified commit, Leaves stagging and working dir. unchanged |
+git reset --mixed **commit** | Moves the Head to the specified commit, files are unstaged and working dir. remains unchanged |
+git reset --hard **commit** | Moves the Head to the specified commit, all changes after the specified commit are discarded |
+
+git merge --no-ff <branch>
+git rebase, all info related to rebase
+squash
+prune
+it cherry-pick <commit> , all info related to cherry-pick
+info about all stash commands
+info on all tagging commands
+git push origin --delete <branch>
+all clean commands
+all Submodule Commands
+all Miscellaneous Commands
+
+all Advanced Commands
+all commands for Working with Remotes
+all git blame
+all tag related commands and info
+working with ref, working with apply
+
+pull request
+best use of github
+GitHub uses, like pull req
