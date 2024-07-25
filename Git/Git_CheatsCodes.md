@@ -21,15 +21,15 @@ A cheat sheet for Git commands
 | &#x2714; | git blame **FileName**                      | See who changed each line and when |
 | &#x2714; | git blame --committer -L 1,3 **FileName**   | Shows commiter of the change, on specified lines|
 | &#x2714; | git blame **Head FileName**                 | Check the previous commit for more insight|
-| &#x2714; | git tag -l                                  | List tags with a pattern |
-| &#x2714; | git tag -n                                  | List tags with annotations |
-| &#x2714; | git show <tagname                           | Show the tag details |
+| &#x274C; | git tag -l                                  | List tags with a pattern |
+| &#x274C; | git tag -n                                  | List tags with annotations |
+| &#x274C; | git show <tagname                           | Show the tag details |
 
-| &#x2714; | git stash list                              | List stashes |
-| &#x2714; | git stash show                              | Show the changes recorded in the stash |
+| &#x274C; | git stash list                              | List stashes |
+| &#x274C; | git stash show                              | Show the changes recorded in the stash |
 
 | &#x2714; | git remote -v                               | List remote repositories |
-| &#x2714; | git remote show origin                      | Show remote repository details |
+| &#x2714; | git remote show **RepoName**                | Show remote repository details |
 
 ## Help 
 | &#x2714; / &#x274C; | Command | Description |
@@ -54,7 +54,7 @@ A cheat sheet for Git commands
 | &#x2714; / &#x274C; | Command | Description |
 | - | - | - |
 | &#x2714; | git fetch                               | downloads everything from remote branch to the remote tracking branch |
-| &#x2714; | git fetch   **RepoName BranchName**     | downloads everything from remote specified branch to the remote tracking branch |
+| &#x2714; | git fetch **RepoName BranchName**     | downloads everything from remote specified branch to the remote tracking branch |
 | &#x2714; | git pull                                | downloads everything from remote branch to the current branch in working directory |
 | &#x2714; | git pull --rebase --prune               | Get latest, rebase any changes not checked in and delete branches that no longer exist | 
 

@@ -1,0 +1,7 @@
+View
+| &#x2714; | git tag -l                                  | List tags with a pattern |
+| &#x2714; | git tag -n                                  | List tags with annotations |
+| &#x2714; | git show <tagname                           | Show the tag details |
+| &#x2714; | git stash list                              | List stashes |
+| &#x2714; | git stash show                              | Show the changes recorded in the stash |
+
