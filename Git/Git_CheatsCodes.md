@@ -53,10 +53,10 @@ A cheat sheet for Git commands
 ## Remote to Local
 | &#x2714; / &#x274C; | Command | Description |
 | - | - | - |
-| &#x2714; | git fetch                               | downloads everything from remote branch to the remote tracking branch |
-| &#x2714; | git fetch **RepoName BranchName**     | downloads everything from remote specified branch to the remote tracking branch |
-| &#x2714; | git pull                                | downloads everything from remote branch to the current branch in working directory |
-| &#x2714; | git pull --rebase --prune               | Get latest, rebase any changes not checked in and delete branches that no longer exist | 
+| &#x274C; | git fetch                               | downloads everything from remote branch to the remote tracking branch |
+| &#x274C; | git fetch **RepoName BranchName**     | downloads everything from remote specified branch to the remote tracking branch |
+| &#x274C; | git pull                                | downloads everything from remote branch to the current branch in working directory |
+| &#x274C; | git pull --rebase --prune               | Get latest, rebase any changes not checked in and delete branches that no longer exist | 
 
 | &#x2714; | git clone *url*                       | Clone a repository into a new directory |
 | &#x2714; | git clone *url* **directory**         | Clone a repository into a specific directory |
@@ -70,8 +70,8 @@ A cheat sheet for Git commands
 | &#x2714; | git reset --soft **commit** | Moves the Head to the specified commit, Leaves stagging and working dir. unchanged |
 | &#x2714; | git reset --mixed **commit** | Moves the Head to the specified commit, files are unstaged and working dir. remains unchanged |
 | &#x2714; | git reset --hard **commit** | Moves the Head to the specified commit, all changes after the specified commit are discarded |
-| &#x2714; | git clean -f\|--force -d                | Recursively remove untracked files from the working tree |
-| &#x2714; | git clean -f\|--force -d -x             | Recursively remove untracked and ignored files from the working tree |
+| &#x274C; | git clean -f\|--force -d                | Recursively remove untracked files from the working tree |
+| &#x274C; | git clean -f\|--force -d -x             | Recursively remove untracked and ignored files from the working tree |
 
 ## Changing Commits
 | &#x2714; / &#x274C; | Command | Description |
@@ -79,18 +79,18 @@ A cheat sheet for Git commands
 | &#x2714; | git commit -m "**Message**"   | Add files to Local Repo which were staged |
 | &#x2714; | git commit -am "**Message**"  | Add files to Local Repo which were NOT staged |
 | &#x2714; | git commit --amend -m "New message"         | Change the last commit message |
-| &#x2714; | git commit --fixup 5720fdf -m "New message" | Merge into the specified commit |
-| &#x2714; | git revert 5720fdf                          | Revert a commit |
-| &#x2714; | git rebase --interactive [origin/main]      | Rebase a PR (`git pull` first) |
-| &#x2714; | git rebase --interactive 5720fdf            | Rebase to a particular commit |
-| &#x2714; | git rebase --interactive --root 5720fdf     | Rebase to the root commit |
-| &#x2714; | git rebase --continue                       | Continue an interactive rebase |
-| &#x2714; | git rebase --abort                          | Cancel an interactive rebase |
-| &#x2714; | git rebase **Branchname**     Reapply commits on top of another base tip
-| &#x2714; | git rebase --interactive <base>       Interactively rebase the current branch onto another base
-| &#x2714; | git cherry-pick **Commit-hash**            Apply the changes introduced by some existing commits
-| &#x2714; | git cherry-pick --abort           Abort the cherry-pick process
-| &#x2714; | git cherry-pick --continue           Continue the cherry-pick process after resolving conflicts
+| &#x274C; | git commit --fixup 5720fdf -m "New message" | Merge into the specified commit |
+| &#x274C; | git revert 5720fdf                          | Revert a commit |
+| &#x274C; | git rebase --interactive [origin/main]      | Rebase a PR (`git pull` first) |
+| &#x274C; | git rebase --interactive 5720fdf            | Rebase to a particular commit |
+| &#x274C; | git rebase --interactive --root 5720fdf     | Rebase to the root commit |
+| &#x274C; | git rebase --continue                       | Continue an interactive rebase |
+| &#x274C; | git rebase --abort                          | Cancel an interactive rebase |
+| &#x274C; | git rebase **Branchname**     Reapply commits on top of another base tip
+| &#x274C; | git rebase --interactive <base>       Interactively rebase the current branch onto another base
+| &#x274C; | git cherry-pick **Commit-hash**            Apply the changes introduced by some existing commits
+| &#x274C; | git cherry-pick --abort           Abort the cherry-pick process
+| &#x274C; | git cherry-pick --continue           Continue the cherry-pick process after resolving conflicts
 
 ## Compare
 | &#x2714; / &#x274C; | Command | Description |
@@ -112,7 +112,7 @@ A cheat sheet for Git commands
 | &#x2714; | git push --tags                         | Push tags to remote repository |
 | &#x2714; | git push **RepoName** --delete **BranchName**  | Delete branch from remote after deleting from local |
 | &#x2714; | git remote add **RepoName** *url*             | Add remote referance on local directory for accessbility to remote repo |
-| &#x2714; | git remote remove <Origin/Other>        | Remove remote referance from local directory for accessbility to remote repo|
+| &#x2714; | git remote remove **RepoName**        | Remove remote referance from local directory for accessbility to remote repo|
 
 | &#x2714; | git fetch upstream                      | Fetch all remote branches |
 | &#x2714; | git rebase upstream/main                | Refresh main branch from upstream |
