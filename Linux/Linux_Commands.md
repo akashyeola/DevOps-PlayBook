@@ -1,4 +1,5 @@
-Command	Function
+Terminal Shortcuts
+
 
 man *command*            help command
 open *~/path*            opens the specified folder in the GUI
@@ -15,7 +16,7 @@ sudo                     Runs a command as a superuser
 ls	                     lists a directory’s content
 ls -a                    list all files including hidden
 ls -l                    list long all the files
-ls -R                    recursively opens all the folders in the current folder
+ls -R                    recursively lists all the files & directories in the current folder
             
 cd	                     changes the working directory to home directory
 cd ..                    previous folder
@@ -53,10 +54,15 @@ find *directoryName* -mtime +20                 Finds files which were modified 
 find *directoryName* -size +100M                Finds files which are of size More that 100 MB
 find *directoryName* -perm 777                  Finds the f/d whcih has the specified permissions
 find *directoryName* -type f -iname "*name*" -exec rm -rf {} + 
--iname for non casesensitive
+                                             -exec *command* placeholder itterative
+-i                                            non case sensitive    '-name' is Case Sensitive
+-n                                            line number
+-B *LineNumber*                               Before specified line number
+-c   count
 
 chmod u=rwx,g=rw,o=r *directoryName*         	Modifies a file’s read, write, and execute permissions
 chmod 777 OR chmod 421 *FileName*               4=read(r) 2=right(w) 1=execute(x) 
+
 
 chown [OPTIONS] USER[:GROUP] *FileName*	            Changes a file, directory, or symbolic link’s ownership
 chown *username* *FileName*                         To change the owner of a file or directory to a specified user
@@ -65,21 +71,47 @@ chown *username:groupname* *FileName*               To change both the user and 
 chown -R *username:groupname* *directoryName*       To change the ownership of a directory and all its contents recursively,
 chown --reference=*reference_file* *target_file*    To change the owner of a f/d to match the owner of another f/d
 
+grep *SPECIFY Phrase* *FileName*                    Searches a string within a file
+grep -r *SPECIFY Phrase* *FileName*                 Searches a string within a directory
+
+history             shows previous used commands in list with serial number
+!*historyNumber*      use command from history referance number
+
+sort *FileName* 	Reorders a file’s content
+sort -r       reverse order
+sort -f       case insensitive
+sort -n       numerical order
+
+jobs        	Displays a shell’s running processes with their statuses
+wget *url*   	Downloads files from a URL
+wget -o *NameYouWant* *url*    downloads the file and r
+kill *PID*	Terminates a running process
+
+top	         Displays running processes and the system’s resource usage and PID
+
 file	Checks a file’s type
-zip and unzip	Creates and extracts a ZIP archive
+lsof    list open files
+lsof -u *username*    list open files by User
+zip *NameYouWant*.zip *FileName*	    Creates ZIP archive
+unzip *FileName*.zip                    extracts a ZIP archive
+
+nslookup *domainName*	Queries a domain’s IP address and vice versa
+nslookup *IPAddress*	Queries a domain’s IP address and vice versa
+
+netstat                	Shows the system’s network information, like routing and sockets
+ifconfig
+sed	                    Finds, replaces, or deletes patterns in a file
+
 tar	Archives files without compression in a TAR format
 nano, vi, and jed	Edits a file with a text editor
 cat	Lists, combines, and writes a file’s content as a standard output
-grep	Searches a string within a file
-sed	Finds, replaces, or deletes patterns in a file
 awk	Finds and manipulates patterns in a file
-sort	Reorders a file’s content
+
 cut	Sections and prints lines from a file
 tee	Prints command outputs in Terminal and a file
 
 su	Runs programs in the current shell as another user
 useradd and userdel	Creates and removes a user account
-top	Displays running processes and the system’s resource usage
 htop	Works like top but with an interactive user interface
 ps	Creates a snapshot of all running processes
 uname	Prints information about your machine’s kernel, name, and hardware
@@ -87,18 +119,16 @@ hostname	Shows your system’s hostname
 time	Calculates commands’ execution time
 systemctl	Manages system services
 watch	Runs another command continuously
-jobs	Displays a shell’s running processes with their statuses
-kill	Terminates a running process
+
+
 shutdown	Turns off or restarts the system
 ping	Checks the system’s network connectivity
-wget	Downloads files from a URL
+
 curl	Transmits data between servers using URLs
 scp	Securely copies files or directories to another system
 rsync	Synchronizes content between directories or machines
 lfconfig	Displays the system’s network interfaces and their configurations
-netstat	Shows the system’s network information, like routing and sockets
 traceroute	Tracks a packet’s hops to its destination
-nslookup	Queries a domain’s IP address and vice versa
 dig	Displays DNS information, including record types
 history	Lists previously run commands
 man	Shows a command’s manual
