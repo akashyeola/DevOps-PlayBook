@@ -46,3 +46,113 @@ Security:
 
 Understanding and using iptables/firewalld
 Managing user permissions and sudo access
+
+_________________________________________
+
+# Linux topics to know for Devops Engineer
+
+### 1. Linux Fundamentals
+
+- **Overview of Linux Distributions**: Understanding the differences between various distributions (e.g., Ubuntu, CentOS, Fedora) and their respective package management systems.
+- **Linux Installation and Setup**: Installing Linux on different environments (bare metal, virtual machines, cloud instances).
+- **File System Hierarchy**: Familiarizing yourself with the Linux directory structure (e.g., /bin, /etc, /home) and the purpose of each directory.
+- **Basic Commands**: Mastering essential commands like `ls` (list directory contents), `cp` (copy files), `mv` (move/rename files), `rm` (remove files), `cat` (concatenate and display files).
+
+### 2. Command-Line Proficiency
+
+- **File System Navigation**: Using commands like `cd` (change directory), `pwd` (print working directory), and `ls`.
+- **Text Editors**: Proficiency in text editors like `vi`, `vim`, and `nano` for editing configuration files and scripts.
+- **Standard I/O**: Understanding how to use `stdin`, `stdout`, and `stderr`, and how to redirect output using `>`, `>>`, and `2>`.
+- **Piping and Redirection**: Combining commands with `|` to pass output from one command as input to another.
+- **Process Management**: Using `ps` (process status), `top` (real-time process monitoring), `kill` (terminate processes).
+
+### 3. Shell Scripting
+
+- **Basics of Bash Scripting**: Writing and executing simple scripts, understanding shell syntax.
+- **Variables and Arrays**: Using variables to store data, and arrays for lists of values.
+- **Control Structures**: Implementing conditional statements (`if`, `else`) and loops (`for`, `while`).
+- **Functions**: Writing reusable code blocks with functions.
+- **Task Automation**: Automating routine tasks with scripts, such as backups and system monitoring.
+
+### 4. Package Management
+
+- **APT (Debian-based)**: Using `apt-get`, `apt-cache`, and `dpkg` for package management.
+- **YUM/DNF (Red Hat-based)**: Managing packages with `yum` or `dnf`.
+- **Installing, Updating, and Removing Software**: Performing software installation, updates, and removals.
+- **Repository Management**: Adding, removing, and managing software repositories.
+
+### 5. Networking Basics
+
+- **Configuring Network Interfaces**: Setting up and managing network interfaces using `ifconfig` or `ip`.
+- **IP Addressing and Subnetting**: Understanding IP addressing schemes and subnetting.
+- **Network Tools**: Using tools like `ping` (check connectivity), `netstat` (network statistics), `traceroute` (trace network path).
+- **DNS and Host Files**: Configuring DNS settings and managing `/etc/hosts` for local hostname resolution.
+- **SSH**: Securely accessing remote machines with SSH, setting up key-based authentication, and using `scp` for secure file transfers.
+
+### 6. Security and Permissions
+
+- **User and Group Management**: Creating and managing users and groups with `useradd`, `groupadd`, `usermod`, and `groupmod`.
+- **Permissions and Ownership**: Using `chmod` to change file permissions, `chown` to change file ownership, and understanding permission symbols (r, w, x).
+- **Sudo**: Configuring and using `sudo` for elevated privileges.
+- **SELinux/AppArmor**: Implementing advanced security policies with SELinux (Security-Enhanced Linux) or AppArmor.
+
+### 7. File Systems and Storage
+
+- **Understanding File Systems**: Familiarity with ext4, xfs, btrfs, and others.
+- **Mounting and Unmounting**: Using `mount` and `umount` commands to attach and detach file systems.
+- **Disk Partitions**: Managing partitions with `fdisk` or `parted`.
+- **LVM (Logical Volume Manager)**: Setting up and managing LVM for flexible disk management.
+
+### 8. System Monitoring and Performance Tuning
+
+- **System Performance Monitoring**: Using `top`, `htop`, `iostat`, and `sar` for monitoring system performance.
+- **Log Management**: Managing system logs with `journald` and `syslog`.
+- **Performance Tuning**: Tweaking system parameters for optimal performance.
+
+### 9. Automated Task Scheduling
+
+- **Cron Jobs**: Creating and managing scheduled tasks with `cron`.
+- **Crontab**: Using `crontab -e` to edit the crontab file, understanding cron syntax.
+- **Anacron**: Setting up tasks with `anacron` for systems that are not continuously running.
+
+### 10. Backup and Recovery
+
+- **Creating Backups**: Using tools like `rsync` for incremental backups, `tar` for archiving files, and `dd` for disk cloning.
+- **Disaster Recovery**: Implementing disaster recovery plans and testing backups.
+
+### 11. Virtualization and Containers
+
+- **Basics of Virtualization**: Understanding virtualization concepts with KVM, VirtualBox.
+- **Docker Fundamentals**: Installing Docker, creating and managing Docker containers and images.
+- **Dockerfile**: Writing Dockerfiles for automated builds.
+- **Container Management**: Using `docker-compose` for managing multi-container applications.
+
+### 12. Advanced Command-Line Tools
+
+- **Text Processing**: Using `grep` for searching, `sed` for stream editing, and `awk` for pattern scanning and processing.
+- **File Management**: Managing files and directories with `find`, `locate`, and `xargs`.
+- **Network Configuration and Troubleshooting**: Advanced usage of `ifconfig`, `ip`, `netstat`, and `traceroute`.
+
+### 13. Networking and Security Tools
+
+- **SSH Configuration**: Setting up and configuring SSH, managing keys and known hosts.
+- **Firewalls**: Configuring firewalls with `iptables` or `firewalld`.
+- **Network Monitoring**: Using `tcpdump` and Wireshark for network analysis.
+- **VPNs**: Setting up VPNs with OpenVPN or similar tools.
+
+### 14. System Services and Daemons
+
+- **Systemd**: Managing system services with `systemctl`, creating and managing service units.
+- **Init Systems**: Understanding different init systems (systemd, SysVinit).
+
+### 15. Kernel and System Tuning
+
+- **Kernel Modules**: Managing kernel modules with `modprobe`, `lsmod`, and `rmmod`.
+- **Kernel Parameters**: Tuning kernel parameters with `sysctl`.
+- **Resource Limits**: Setting resource limits with `ulimit`.
+
+### 16. Advanced User and Group Management
+
+- **Advanced User Management**: Creating and managing user accounts, setting password policies.
+- **Sudo Configuration**: Configuring `sudo` and managing the sudoers file with `visudo`.
+- **PAM (Pluggable Authentication Modules)**: Understanding and configuring PAM for authentication.

@@ -15,12 +15,14 @@ A cheat sheet for Git commands
 | &#x2714; | git branch --merged                         | Show branched merged into current branch |
 | &#x2714; | git branch --no-merged                      | Show branched NOT merged into current branch |
 | &#x2714; | git branch -vv                              | Check if upstream is set |
+| &#x2714; | git show                                    | Show the current commit |
 | &#x2714; | git show HEAD                               | Show the current commit |
 | &#x2714; | git show **Branchname**                     | Show the last commit in a branch |
 | &#x2714; | git show **Commit-hash**                    | Show specific commit |
 | &#x2714; | git blame **FileName**                      | See who changed each line and when |
 | &#x2714; | git blame --committer -L 1,3 **FileName**   | Shows commiter of the change, on specified lines|
 | &#x2714; | git blame **Head FileName**                 | Check the previous commit for more insight|
+
 | &#x274C; | git tag -l                                  | List tags with a pattern |
 | &#x274C; | git tag -n                                  | List tags with annotations |
 | &#x274C; | git show <tagname                           | Show the tag details |
@@ -102,11 +104,10 @@ A cheat sheet for Git commands
 | &#x2714; | git diff *Branch**1** Branch**2***      | See difference between two branches |
 
 ## Local to Remote
-| - | Command | Description |
 | &#x2714; / &#x274C; | Command | Description |
-| &#x2714; | git push                                       Update remote refs along with associated objects
-| &#x2714; | git push -u **RepoName BranchName**     Push a branch and set upstream.
-| &#x2714; | git push **RepoName BranchName**                Push a branch to the remote repository
+| &#x2714; | git push                                  |     Update remote refs along with associated objects |
+| &#x2714; | git push -u **RepoName BranchName**     | Push a branch and set upstream |
+| &#x2714; | git push **RepoName BranchName**                Push a branch to the remote repository |
 | &#x2714; | git push --force                        | Push any changes while overwriting any remote changes |
 | &#x2714; | git push --force-with-lease             | Push any changes but stop if there are any remote changes |
 | &#x2714; | git push --tags                         | Push tags to remote repository |
@@ -116,8 +117,6 @@ A cheat sheet for Git commands
 
 | &#x2714; | git fetch upstream                      | Fetch all remote branches |
 | &#x2714; | git rebase upstream/main                | Refresh main branch from upstream |
-
-
 
 ## Branching and Mearging
 | &#x2714; / &#x274C; | Command | Description |
@@ -129,7 +128,7 @@ A cheat sheet for Git commands
 | &#x2714; | git branch -m  **NEW-BranchName**         | Rename Current Branch|
 
 | &#x2714; | git merge **Branchname**                  | Merge branch into current branch |
-| &#x2714; | git merge origin/**Branchname**           | Merge the referance(Remote-Tracking Branches) from remote branch into current branch|
+| &#x2714; | git merge **RepoName**/**Branchname**           | Merge the referance(Remote-Tracking Branches) from remote branch into current branch|
 | &#x2714; | git merge --no-ff **Branchname**    Merge with a merge commit even if a fast-forward merge is possible
 | &#x2714; | git merge --squash **Branchname**    Merge a branch into the current branch but do not create a commit
 | &#x2714; | git merge --abort                  Abort the merge process and try to reconstruct the pre-merge state
@@ -158,8 +157,8 @@ git stash                  Stash the changes in a dirty working directory away
 | &#x2714; | git tag -a\|--annotate 0.0.1 -m\|--message "Message" | Create a tag |
 | &#x2714; | git tag -d\|--delete 0.0.1                           | Delete a tag |
 | &#x2714; | git push --tags                                      | Push tags to remote repository |
-| &#x2714; | git push origin <tagname>` - Push a tag to the remote repository
-| &#x2714; | git push origin --delete <tagname>` - Delete a tag from the remote repository
+| &#x2714; | git push **RepoName** <tagname>` - Push a tag to the remote repository
+| &#x2714; | git push **RepoName** --delete <tagname>` - Delete a tag from the remote repository
 
 
 ## File Handling
