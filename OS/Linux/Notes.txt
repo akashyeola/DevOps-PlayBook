@@ -1,52 +1,3 @@
-Basic Commands:
-
-Navigating the filesystem (ls, cd, pwd)
-File operations (cp, mv, rm, touch, mkdir, rmdir)
-Viewing and editing files (cat, less, more, head, tail, nano, vi/vim)
-File Permissions and Ownership:
-
-Understanding permissions (r, w, x)
-Changing permissions (chmod)
-Changing ownership (chown, chgrp)
-Process Management:
-
-Viewing processes (ps, top, htop)
-Managing processes (kill, pkill, killall, nice, renice)
-Package Management:
-
-Installing and managing packages (apt, yum, dnf, snap)
-Networking:
-
-Network configuration and troubleshooting (ifconfig, ip, ping, netstat, ss, traceroute)
-Managing network services (systemctl, service)
-Secure Shell (SSH) (ssh, scp, sftp)
-Shell Scripting:
-
-Basics of shell scripting (sh, bash)
-Writing and executing scripts (.sh files)
-Common scripting constructs (loops, conditionals, functions)
-User and Group Management:
-
-Managing users (useradd, usermod, userdel, passwd)
-Managing groups (groupadd, groupmod, groupdel)
-Understanding and using sudo
-File and Disk Management:
-
-Disk usage and partition management (df, du, fdisk, lsblk)
-Mounting and unmounting filesystems (mount, umount)
-File compression and archiving (tar, gzip, gunzip, zip, unzip)
-System Monitoring and Performance:
-
-Monitoring system performance (vmstat, iostat, free)
-Analyzing logs (/var/log, journalctl)
-Cron Jobs and Task Scheduling:
-
-Scheduling tasks with cron (crontab, cron.d)
-Security:
-
-Understanding and using iptables/firewalld
-Managing user permissions and sudo access
-
 _________________________________________
 
 # Linux topics to know for Devops Engineer
@@ -156,3 +107,23 @@ _________________________________________
 - **Advanced User Management**: Creating and managing user accounts, setting password policies.
 - **Sudo Configuration**: Configuring `sudo` and managing the sudoers file with `visudo`.
 - **PAM (Pluggable Authentication Modules)**: Understanding and configuring PAM for authentication.
+
+_____________________________________________
+Viewing and editing files (cat, less, more, head, tail, nano, vi/vim)
+
+
+Process Management:
+Viewing processes (ps, top, htop)
+Managing processes (kill, pkill, killall, nice, renice)
+
+File and Disk Management:
+Disk usage and partition management (df, du, fdisk, lsblk)
+File compression and archiving (tar, gzip, gunzip, zip, unzip)
+
+System Monitoring and Performance:
+Monitoring system performance (vmstat, iostat, free)
+Analyzing logs (/var/log, journalctl)
+
+Security:
+Understanding and using iptables/firewalld
+Managing user permissions and sudo access
