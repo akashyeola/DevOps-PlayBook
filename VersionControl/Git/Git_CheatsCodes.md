@@ -5,16 +5,16 @@ A cheat sheet for Git commands
 | &#x2714; / &#x274C; | Command | Description |
 | - | - | - |
 | &#x2714; | git config -l                               | List already configured setup| 
-| &#x2714; | git status                                  | Show the working tree status
+| &#x2714; | git status                                  | Show the working tree status |
 | &#x2714; | git log                                     | See commit list |
-| &#x2714; | git log --patch                             | See commit list and line changes |
+| &#x2714; | git log --patch                             | See commit list the line changes for last commit |
 | &#x2714; | git log --decorate --graph --oneline        | See commit visualization |
 | &#x2714; | git log --grep **WORD**                     | See commits with <WORD> in the message |
 | &#x2714; | git branch                                  | List all branches|
 | &#x2714; | git branch -a                               | List all branches Local and Remote|
 | &#x2714; | git branch --merged                         | Show branched merged into current branch |
 | &#x2714; | git branch --no-merged                      | Show branched NOT merged into current branch |
-| &#x2714; | git branch -vv                              | Check if upstream is set |
+| &#x2714; | git branch -vv                              | Show where the upstream is set for local branches|
 | &#x2714; | git show                                    | Show the current commit |
 | &#x2714; | git show HEAD                               | Show the current commit |
 | &#x2714; | git show **Branchname**                     | Show the last commit in a branch |
